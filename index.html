@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Images</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--    <img src="https://placehold.co/1600x400/png" alt="IMAGE"-->
+<!--     srcset="https://placehold.co/1600x400/png  1600px"/>
+if high resolution device, so 1 css px is 4 device px better next -> 1600w-->
+
+    <img src="https://placehold.co/1600x400/png" alt="IMAGE"
+         sizes="100vw"
+         srcset="
+            https://placehold.co/900x200/png   900w,
+            https://placehold.co/1600x400/png  1600w
+        "/>
+
+    <div id="data"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
